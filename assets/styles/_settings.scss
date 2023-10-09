@@ -1,0 +1,69 @@
+/************** COLOR ***************/
+$gradient1: linear-gradient(335deg, rgba(248,191,191,1) 0%, rgba(238,139,139,1) 100%);
+$black1: #423A3A;
+$white1:#FFF;
+$color1: #CE9898;
+$color2: #EE8B8B;
+/************** FONTS **************/
+@font-face {
+    font-family: "josefin";
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+$font1: josefin, sans-serif;
+
+/************** GENERAL PARAMETER *************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 22px;       
+    }
+
+    font-family: $font1;
+    font-weight:400;
+    color: $color1;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+h1{
+    @media screen and (max-width: 1024px) {
+            font-size: 40px;
+            line-height: 42px;
+            letter-spacing: 10.83px;
+
+            span{
+                line-height:42px;
+                font: 40px;
+            }
+       }
+
+    line-height: 64px;
+    font-size: 64px;
+    letter-spacing: 17.32px;
+    font-family: $font1;
+    color: #CE9898;
+    font-weight: 300;
+    text-transform: uppercase;
+ 
+    span{
+
+        @media screen and (max-width: 1024px) {
+                font-size: 40px;
+                line-height:42px;         
+       }
+      
+        font-weight:600;
+        line-height: 64px;
+        color: $black1;
+        font-size: 71px;
+        
+    }
+}

@@ -1,0 +1,275 @@
+/************** COLOR ***************/
+/************** FONTS **************/
+@font-face {
+  font-family: "josefin";
+  src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+}
+/************** GENERAL PARAMETER *************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: josefin, sans-serif;
+  font-weight: 400;
+  color: #CE9898;
+  font-size: 16px;
+  line-height: 28px;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+h1 {
+  line-height: 64px;
+  font-size: 64px;
+  letter-spacing: 17.32px;
+  font-family: josefin, sans-serif;
+  color: #CE9898;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10.83px;
+  }
+  h1 span {
+    line-height: 42px;
+    font: 40px;
+  }
+}
+h1 span {
+  font-weight: 600;
+  line-height: 64px;
+  color: #423A3A;
+  font-size: 71px;
+}
+@media screen and (max-width: 1024px) {
+  h1 span {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 1024px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+main .container {
+  background: url(../images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .container .header-content {
+  padding-top: 65px;
+  margin-left: 165px;
+}
+@media screen and (max-width: 1024px) {
+  main .container .header-content {
+    padding-top: 31px;
+    margin-left: 32px;
+  }
+  main .container .header-content img {
+    width: 100px;
+  }
+}
+main .container .header-content img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 1024px) {
+  main .container #heroMobile {
+    background: url(../images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 32px 0 64px;
+    width: 100%;
+    min-height: 376px;
+    height: 100%;
+  }
+}
+main .container .content {
+  margin-left: 165px;
+  margin-top: 136px;
+  max-width: 445px;
+  min-height: 404px;
+}
+@media screen and (max-width: 1024px) {
+  main .container .content {
+    margin: 32px auto;
+    text-align: center;
+    max-width: 311px;
+    min-height: 310px;
+  }
+}
+main .container .content p {
+  margin: 32px 0 40px;
+}
+main .container .content form {
+  position: relative;
+}
+main .container .content form.wrong input {
+  border: 2px solid red;
+}
+main .container .content form.wrong #infoMail {
+  opacity: 1;
+}
+main .container .content form.wrong button::before {
+  opacity: 1;
+}
+main .container .content form input {
+  outline: none;
+  background: none;
+  border-radius: 28px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid rgba(206, 152, 152, 0.4745098039);
+  width: 100%;
+  height: 56px;
+  padding: 15px 32px;
+  color: #423A3A;
+  font-family: josefin, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  main .container .content form input {
+    height: 48px;
+    font-size: 14px;
+    padding: 11px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+main .container .content form input::-webkit-input-placeholder {
+  color: rgba(206, 152, 152, 0.4470588235);
+  font-family: josefin, sans-serif;
+  font-size: 16px;
+  display: -webkit-box;
+  display: flex;
+}
+main .container .content form input::-moz-placeholder {
+  color: rgba(206, 152, 152, 0.4470588235);
+  font-family: josefin, sans-serif;
+  font-size: 16px;
+  display: flex;
+}
+main .container .content form input:-ms-input-placeholder {
+  color: rgba(206, 152, 152, 0.4470588235);
+  font-family: josefin, sans-serif;
+  font-size: 16px;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .container .content form input::-ms-input-placeholder {
+  color: rgba(206, 152, 152, 0.4470588235);
+  font-family: josefin, sans-serif;
+  font-size: 16px;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .container .content form input::placeholder {
+  color: rgba(206, 152, 152, 0.4470588235);
+  font-family: josefin, sans-serif;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  main .container .content form input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  main .container .content form input::-moz-placeholder {
+    font-size: 14px;
+  }
+  main .container .content form input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  main .container .content form input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  main .container .content form input::placeholder {
+    font-size: 14px;
+  }
+}
+main .container .content form #infoMail {
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  bottom: -40px;
+  left: 20px;
+  position: absolute;
+  display: inline-block;
+}
+main .container .content form button {
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  z-index: 2;
+  right: -1px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 56px;
+  border-radius: 28px;
+  width: 100px;
+  background: linear-gradient(335deg, rgb(248, 191, 191) 0%, rgb(238, 139, 139) 100%);
+  -webkit-box-shadow: 0 15px 20px 0 rgba(206, 152, 152, 0.2823529412);
+          box-shadow: 0 15px 20px 0 rgba(206, 152, 152, 0.2823529412);
+}
+@media screen and (max-width: 1024px) {
+  main .container .content form button {
+    width: 64px;
+  }
+}
+main .container .content form button:hover {
+  background: #F3C8C8;
+}
+main .container .content form button::before {
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  content: "";
+  background: url(../images/icon-error.svg);
+  width: 24px;
+  height: 24px;
+  left: -40px;
+}
+main #heroDesktop {
+  background-image: url(../images/hero-desktop.jpg);
+  width: 100%;
+  min-width: 610px;
+  min-height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1024px) {
+  main #heroDesktop {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */
